@@ -31,6 +31,12 @@ You can use any method you prefer to access Gemini 2.5 Flash. The code assumes t
 ## Running the Evaluator
 
 ```bash
+export LLM_API_KEY=your_key_here
+python evaluator.py
+```
+
+Or pass it directly on the command line:
+```bash
 python evaluator.py --api-key YOUR_KEY
 ```
 
