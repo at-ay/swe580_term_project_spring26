@@ -30,12 +30,16 @@ You can use any method you prefer to access Gemini 2.5 Flash. The code assumes t
 
 ## Running the Evaluator
 
+Edit the provided `.env` file and replace the placeholder with your key:
+```
+LLM_API_KEY=your_openrouter_key_here
+```
+Then load it and run:
 ```bash
-export LLM_API_KEY=your_key_here
-python evaluator.py
+export $(cat .env) && python evaluator.py
 ```
 
-Or pass it directly on the command line:
+Or pass the key directly on the command line:
 ```bash
 python evaluator.py --api-key YOUR_KEY
 ```
